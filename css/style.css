@@ -1,14 +1,19 @@
 :root {
     font-family: sans-serif;
+    --bg: white;
+    --fg: black;
 }
 
-html, body {
-    height: 100%;
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg: #000;
+        --fg: whitesmoke;
+    }
 }
 
 body {
-    margin: 0;
-    padding: 0 10px;
+    background-color: var(--bg);
+    color: var(--fg);
 }
 
 h1,
@@ -18,6 +23,19 @@ h4,
 h5,
 h6 {
     text-align: center;
+}
+
+:link {
+    color: var(--fg);
+}
+
+:visited {
+    color: grey;
+}
+
+hr {
+    background-color: var(--fg);
+    color: var(--fg);
 }
 
 header {

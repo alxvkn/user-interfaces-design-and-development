@@ -6,25 +6,32 @@ const body = document.querySelector('body')
     * @param {number} initialPosition.y
     * @param {number} size
     *
-    * @returns {HTMLDivElement}
+    * @returns {SVGElement}
     */
 function createCircle({ x, y }, size) {
-    const circle = document.createElement('div')
+    const svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg')
 
-    circle.style.position = 'fixed'
+    const circle = document.createElementNS('http://www.w3.org/2000/svg', 'circle')
 
-    circle.style.left = `${x}px`
-    circle.style.top = `${y}px`
-    circle.style.width = `${size}px`
-    circle.style.height = `${size}px`
-    circle.style.borderRadius = `${size / 2}px`
-    circle.style.zIndex = -99
-    circle.style.backgroundColor = 'var(--circle-color)'
+    circle.setAttribute('r', (size / 2).toString())
+    circle.setAttribute('cx', size / 2)
+    circle.setAttribute('cy', size / 2)
+    circle.setAttribute('fill', 'var(--circle-color)')
 
-    return circle
+    svg.appendChild(circle)
+
+    svg.setAttribute('width', (size).toString())
+    svg.setAttribute('height', (size).toString())
+
+    svg.style.position = 'fixed'
+
+    svg.style.left = `${x}px`
+    svg.style.top = `${y}px`
+    svg.style.filter = 'blur(10px)'
+    svg.style.zIndex = -99
+
+    return svg
 }
-
-body.style.backdropFilter = 'blur(10px)'
 
 const circleSize = 100
 
@@ -41,15 +48,13 @@ const updateCenter = () => {
 }
 
 const circle = createCircle(center, circleSize)
+body.appendChild(circle)
 
 window.visualViewport.addEventListener('resize', () => {
     updateCenter()
     circle.style.left = `${center.x}px`
     circle.style.top = `${center.y}px`
 })
-
-const html = document.querySelector('html')
-html.appendChild(circle)
 
 let currentX = center.x
 let currentY = center.y

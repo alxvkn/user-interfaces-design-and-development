@@ -12,7 +12,6 @@ footer {
 
     hr {
         height: 2px;
-        background-color: black;
     }
 
     #contacts-container {

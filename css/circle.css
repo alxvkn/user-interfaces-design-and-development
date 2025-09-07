@@ -1,3 +1,9 @@
 :root {
-    --circle-color: cyan
+    --circle-color: #aaffaa;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --circle-color: #aaccaa
+    }
 }
