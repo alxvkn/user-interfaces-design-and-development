@@ -70,7 +70,7 @@ lerpCircleToTargetPosition()
 
 if (navigator.userAgent.includes('Mobile')) {
     navigator.permissions.query({ name: 'accelerometer' }).then(result => {
-        body.prepend(result.state)
+        if (result.state != 'granted') throw new Error()
 
         let accelerometer = null
         accelerometer = new Accelerometer({ frequency: 60 })
