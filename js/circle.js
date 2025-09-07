@@ -19,7 +19,7 @@ function createCircle({ x, y }, size) {
     circle.style.height = `${size}px`
     circle.style.borderRadius = `${size / 2}px`
     circle.style.zIndex = -99
-    circle.style.backgroundColor = 'cyan'
+    circle.style.backgroundColor = 'var(--circle-color)'
 
     return circle
 }
