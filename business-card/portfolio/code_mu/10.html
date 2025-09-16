@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>10</title>
+        <link href="10.css" rel="stylesheet">
+    </head>
+    <body>
+        <h2>overflow-wrap: break-word &ap; word-break: break-word</h2>
+        <ul>
+            <li>
+                <b>overflow-wrap: break-word</b>
+                <div class="overflow">
+                    Lorem ipsum dolor sit amet consecteturconsecteturconsecteturconsectetur adipisicing elit. Repellat modi cupiditate consectetur ab. Corrupti asperiores quae corporis rem, excepturi quod architecto impedit veritatis vitae! Quas labore sapiente doloribus odit soluta.
+                </div>
+            </li>
+            <li>
+                <b>word-break: break-word</b>
+                <div class="word-break">
+                    Lorem ipsum dolor sit amet consecteturconsecteturconsecteturconsectetur adipisicing elit. Repellat modi cupiditate consectetur ab. Corrupti asperiores quae corporis rem, excepturi quod architecto impedit veritatis vitae! Quas labore sapiente doloribus odit soluta.
+                </div>
+            </li>
+        </ul>
+        <br>
+        <h2>Поведение различается в случае наличия в тексте иероглифов</h2>
+        <ul>
+            <li>
+                <b>overflow-wrap: break-word</b>
+                <div class="overflow">
+                    わわわわわわわわわわわわわわわわわわわわわわわわわわわわわわわわわわわわわわわわわわわわわわわわわわわ
+                </div>
+            </li>
+            <li>
+                <b>word-break: break-word</b>
+                <div class="word-break">
+                    わわわわわわわわわわわわわわわわわわわわわわわわわわわわわわわわわわわわわわわわわわわわわわわわわわわ
+                </div>
+            </li>
+        </ul>
+        Или не различается. Я не знаю. Я не понял
+    </body>
+</html>

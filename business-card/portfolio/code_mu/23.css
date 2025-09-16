@@ -1,0 +1,11 @@
+#a li::after {
+    content: '.'
+}
+
+#b span::after {
+    content: '';
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    position: absolute;
+}

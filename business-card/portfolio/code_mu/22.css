@@ -1,0 +1,17 @@
+table {
+    width: 100px;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+td {
+    border: 1px solid black;
+}
+
+#a table {
+    table-layout: auto;
+}
+
+#b table {
+    table-layout: fixed;
+}

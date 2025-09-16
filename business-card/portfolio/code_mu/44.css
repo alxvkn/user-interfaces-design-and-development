@@ -1,0 +1,12 @@
+input {
+    display: block;
+}
+
+input:nth-child(1):focus {
+    outline: 1px solid red;
+}
+
+input:nth-child(2):focus {
+    outline: none;
+    box-shadow: 0 0 3px red;
+}

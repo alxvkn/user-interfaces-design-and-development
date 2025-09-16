@@ -1,0 +1,11 @@
+#a, #b {
+    border: solid 1px black;
+}
+
+#a {
+    width: max(300px, 50%);
+}
+
+#b {
+    width: min(400px, 30%);
+}

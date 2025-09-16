@@ -1,0 +1,22 @@
+#a {
+    width: 80%;
+    columns: 300px 2;
+}
+
+#b {
+    width: 1000px;
+    column-count: 4;
+}
+
+#c {
+    width: 1000px;
+    column-count: 4;
+    column-gap: 30px;
+}
+
+#d {
+    width: 1000px;
+    column-count: 4;
+    column-gap: 30px;
+    column-rule: dashed grey;
+}

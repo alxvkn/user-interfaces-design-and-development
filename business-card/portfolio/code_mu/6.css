@@ -1,0 +1,23 @@
+#no-wrap {
+    width: 200px;
+    white-space: nowrap;
+}
+
+#pre {
+    white-space: pre;
+}
+
+#pre-wrap {
+    white-space: pre-wrap;
+}
+
+#pre-line {
+    white-space: pre-line;
+}
+
+#no-wrap,
+#pre,
+#pre-wrap,
+#pre-line {
+    border: solid 1px black;
+}

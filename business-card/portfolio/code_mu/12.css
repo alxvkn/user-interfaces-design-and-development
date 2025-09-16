@@ -1,0 +1,15 @@
+#a {
+    text-decoration: underline wavy red;
+}
+
+#b {
+    text-decoration: underline dotted red;
+}
+
+#c {
+    text-decoration: underline dashed red;
+}
+
+#d {
+    text-decoration: underline double red;
+}

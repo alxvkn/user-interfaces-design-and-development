@@ -1,0 +1,25 @@
+#a, #b, #c, #d, #e {
+    width: 200px;
+    white-space: nowrap;
+    border: 1px solid black;
+}
+
+#b {
+    overflow-x: scroll;
+}
+
+#c {
+    overflow-x: hidden;
+}
+
+#d {
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+}
+
+#e {
+    overflow-x: hidden;
+}
+#e:hover {
+    white-space: wrap;
+}

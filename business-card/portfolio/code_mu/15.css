@@ -1,0 +1,3 @@
+input[type=button] {
+    pointer-events: none;
+}

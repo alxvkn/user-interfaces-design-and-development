@@ -1,0 +1,37 @@
+table {
+    border: 1px solid black;
+    border-collapse: separate;
+    border-spacing: 24px 16px;
+    empty-cells: hide;
+}
+
+td {
+    height: 50px;
+    width: 100px;
+    background-color: green;
+    color: white;
+    border: 1px solid black;
+    text-align: center;
+}
+
+#a {
+    vertical-align: center;
+}
+
+#b td {
+    vertical-align: top;
+}
+
+#c td {
+    vertical-align: top;
+    text-align: right;
+}
+
+#d td {
+    vertical-align: bottom;
+}
+
+#e td {
+    vertical-align: bottom;
+    text-align: right;
+}

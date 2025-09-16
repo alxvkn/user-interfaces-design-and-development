@@ -1,0 +1,14 @@
+#red-form input {
+    border: solid 1px red;
+}
+
+#thick-form input {
+    width: 150px;
+    height: 30px;
+}
+
+#thick-vertical-form input {
+    width: 150px;
+    height: 30px;
+    margin-bottom: 10px;
+}

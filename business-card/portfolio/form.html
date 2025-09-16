@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Форма</title>
+        <link href="/css/style.css" rel="stylesheet">
+        <link href="css/form.css" rel="stylesheet">
+    </head>
+    <body>
+        <a href="index.html">Назад</a>
+        <br>
+        <b>Написать письмо</b>
+        <br>
+        <label><b>От кого:</b>
+            <input type="text">
+        </label>
+        <br>
+        <label>
+            <b>Кому:</b>
+            <input type="text">
+        </label>
+        <fieldset>
+            <legend>Формат</legend>
+            <input type="checkbox"> Скрытая копия
+            <br>
+            <label>
+                <input name="kind" type="radio" value="regular" checked>
+                Обычное
+            </label>
+            <label>
+                <input name="kind" type="radio" value="with-attachment">
+                С вложением
+            </label>
+            <br>
+            <input type="file">
+        </fieldset>
+        Текст письма
+        <br>
+        <textarea name="Текст письма"></textarea>
+        <br>
+        <button>Отправить</button><button>Отменить</button>
+    </body>
+</html>

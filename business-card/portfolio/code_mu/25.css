@@ -1,0 +1,9 @@
+a:hover {
+    position: relative;
+}
+
+a:hover::before {
+    content: attr(href);
+    position: absolute;
+    top: -1em;
+}

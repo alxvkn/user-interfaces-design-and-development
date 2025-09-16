@@ -1,0 +1,42 @@
+table {
+    caption {
+        font-weight: bold;
+        font-size: 1.2rem;
+        padding: 10px;
+    }
+
+    border-collapse: collapse;
+
+    thead {
+        background-color: darkred;
+        color: white;
+    }
+
+    th,
+    td {
+        padding: 5px 10px;
+        border: solid gray 1px;
+        text-align: center;
+    }
+
+    tr:nth-child(4) {
+        font-weight: bold;
+
+        td:first-child {
+            text-align: right;
+        }
+    }
+
+    tr:nth-child(-n+3) {
+        td:first-child {
+            text-align: left;
+            background-color: whitesmoke;
+        }
+        td:nth-child(2) {
+            font-style: italic;
+        }
+        td:nth-child(n + 2) {
+            font-weight: 200;
+        }
+    }
+}

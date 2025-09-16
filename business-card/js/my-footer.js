@@ -1,10 +1,8 @@
 class MyFooter extends HTMLElement {
     connectedCallback() {
-        console.log('MyFooter connectedCallback')
-
         this.innerHTML = `
 <style>
-footer {
+my-footer {
     h1 {
         font-size: 1.5rem;
         padding-bottom: 20px;

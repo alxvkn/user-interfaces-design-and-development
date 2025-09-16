@@ -1,0 +1,15 @@
+#a {
+    counter-reset: headers;
+    h1::before {
+        counter-increment: headers;
+        content: counter(headers) ' ';
+    }
+}
+
+#b {
+    counter-reset: headers;
+    h1::before {
+        counter-increment: headers;
+        content: '№' counter(headers) ' ';
+    }
+}

@@ -1,0 +1,7 @@
+#a {
+    user-select: none;
+}
+
+#b .p-number {
+    user-select: none;
+}

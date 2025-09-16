@@ -1,0 +1,38 @@
+#a table {
+    border: 1px solid black;
+    border-collapse: separate;
+    border-spacing: 8px;
+}
+
+#a td {
+    padding: 8px;
+    background-color: green;
+    color: white;
+    border: 1px solid black;
+}
+
+#b table {
+    border: 1px solid black;
+    border-collapse: separate;
+    border-spacing: 16px;
+}
+
+#b td {
+    padding: 8px;
+    background-color: green;
+    color: white;
+    border: 1px solid black;
+}
+
+#c table {
+    border: 1px solid black;
+    border-collapse: separate;
+    border-spacing: 16px 24px;
+}
+
+#c td {
+    padding: 8px;
+    background-color: green;
+    color: white;
+    border: 1px solid black;
+}

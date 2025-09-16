@@ -1,0 +1,49 @@
+#a,
+#b,
+#c,
+#d,
+#e {
+    border: 1px solid black;
+    width: 200px;
+    height: 200px;
+    margin-bottom: 200px;
+}
+
+#b {
+    overflow-y: auto;
+}
+
+#c {
+    overflow-y: hidden;
+}
+
+#d {
+    overflow-y: hidden;
+}
+#d:hover {
+    height: fit-content;
+}
+
+#e, #f, #g, #h {
+    width: 300px;
+    height: 300px;
+}
+
+#f {
+    overflow: auto;
+}
+
+#g {
+    overflow: hidden;
+}
+
+#h {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+#i {
+    width: 150px;
+    height: 150px;
+    overflow-y: scroll;
+}

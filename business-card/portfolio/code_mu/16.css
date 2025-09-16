@@ -1,0 +1,11 @@
+#a a {
+    cursor: default;
+    pointer-events: none;
+}
+
+#b a {
+    cursor: not-allowed;
+}
+#b a:active {
+    pointer-events: none;
+}

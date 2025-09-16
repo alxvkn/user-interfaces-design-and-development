@@ -1,0 +1,19 @@
+#a {
+    letter-spacing: 1px;
+}
+
+#b {
+    letter-spacing: 3px;
+}
+
+#c {
+    letter-spacing: -1px;
+}
+
+#d {
+    word-spacing: 3px;
+}
+
+#e {
+    word-spacing: 0px;
+}

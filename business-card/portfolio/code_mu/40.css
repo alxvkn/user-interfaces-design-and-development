@@ -1,0 +1,4 @@
+form:nth-child(2) input {
+    width: 200px;
+    height: 50px;
+}
