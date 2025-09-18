@@ -12,6 +12,7 @@ html {
 }
 
 body {
+    padding-top: 120px;
     width: min(1420px, 90%);
     margin: auto;
     /* debug */
@@ -37,7 +38,7 @@ body {
     margin-right: 1rem;
 
     h1 {
-        font-size: 2rem;
+        font-size: 38px;
         font-weight: bold;
         line-height: 1.5em;
         margin: 0;
@@ -53,6 +54,7 @@ body {
 
 #mission {
     font-weight: 400;
+    font-size: 18px;
     margin-top: calc(1rem + 10px);
 }
 
@@ -75,12 +77,12 @@ body {
         font-weight: 600;
         /* text-wrap: nowrap; */
         .big-number {
-            font-size: 3rem;
+            font-size: 54px;
             color: var(--accent);
         }
     }
     .details {
-        padding-top: 2rem;
+        padding-top: 25px;
         font-size: 0.9rem;
         color: grey;
     }

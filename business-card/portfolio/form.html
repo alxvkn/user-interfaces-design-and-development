@@ -9,36 +9,39 @@
     </head>
     <body>
         <a href="index.html">Назад</a>
-        <br>
-        <b>Написать письмо</b>
-        <br>
-        <label><b>От кого:</b>
-            <input type="text">
-        </label>
-        <br>
-        <label>
-            <b>Кому:</b>
-            <input type="text">
-        </label>
-        <fieldset>
-            <legend>Формат</legend>
-            <input type="checkbox"> Скрытая копия
+        <form>
+            <h1>Написать письмо</h1>
+            <section id="adresses">
+                <label>
+                    <b>От кого:</b>
+                    <input type="text">
+                </label>
+                <label>
+                    <b>Кому:</b>
+                    <input type="text">
+                </label>
+            </section>
+            <fieldset>
+                <legend>Формат</legend>
+                <input type="checkbox"> Скрытая копия
+                <br>
+                <label>
+                    <input name="kind" type="radio" value="regular" checked>
+                    Обычное
+                </label>
+                <label>
+                    <input name="kind" type="radio" value="with-attachment">
+                    С вложением
+                </label>
+                <br>
+                <input type="file">
+            </fieldset>
+            Текст письма
             <br>
-            <label>
-                <input name="kind" type="radio" value="regular" checked>
-                Обычное
-            </label>
-            <label>
-                <input name="kind" type="radio" value="with-attachment">
-                С вложением
-            </label>
+            <textarea name="Текст письма"></textarea>
             <br>
-            <input type="file">
-        </fieldset>
-        Текст письма
-        <br>
-        <textarea name="Текст письма"></textarea>
-        <br>
-        <button>Отправить</button><button>Отменить</button>
+            <input type="submit">
+            <button>Отменить</button>
+        </form>
     </body>
 </html>
