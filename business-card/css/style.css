@@ -29,6 +29,14 @@ h6 {
     text-align: center;
 }
 
+:visited, :link {
+    transition: background-color 0.2s, color 0.2s;
+    &:hover {
+        background-color: var(--fg);
+        color: var(--bg);
+    }
+}
+
 :link {
     color: var(--fg);
 }
