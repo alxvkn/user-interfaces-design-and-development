@@ -62,10 +62,6 @@ main {
         margin-right: auto;
     }
 
-    #bio {
-        font-size: 0.75rem;
-    }
-
     #images-container {
         border: solid 2px black;
         padding: 10px;

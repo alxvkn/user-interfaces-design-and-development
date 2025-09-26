@@ -17,7 +17,7 @@ my-footer {
         justify-content: space-around;
 
         #phone-number {
-            font-size: 3rem;
+            font-size: 2rem;
         }
     }
 
