@@ -9,7 +9,7 @@ my-footer {
     }
 
     hr {
-        height: 2px;
+        height: 1px;
     }
 
     #contacts-container {
