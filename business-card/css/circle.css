@@ -1,9 +1,3 @@
 :root {
-    --circle-color: #aaffaa;
-}
-
-@media (prefers-color-scheme: dark) {
-    :root {
-        --circle-color: #aaccaa
-    }
+    --circle-color: #fbe95f;
 }
