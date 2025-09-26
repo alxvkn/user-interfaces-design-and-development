@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Обращение к цифрам числа</title>
+    </head>
+    <body>
+        <h1>Обращение к цифрам числа</h1>
+    
+        <script>
+        const number = 123456
+
+        let sum = 0
+        for (const c of number.toString()) {
+            sum += Number(c)
+        }
+
+        let prod = 1
+        for (const c of number.toString()) {
+            prod *= Number(c)
+        }
+
+        let reverse = Number(number.toString().split("").reverse().join(""))
+
+        alert(`сумма чисел ${sum}
+произведение чисел ${prod}
+обратное число ${reverse}`)
+        </script>
+    </body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title></title>
+    </head>
+    <body>
+    
+        <script>
+        const date = new Date()
+
+        const day = date.getDate().toString().padStart(2, '0')
+        const month = (date.getMonth() + 1).toString().padStart(2, '0')
+        const year = date.getFullYear()
+
+        document.write(`СЕГОДНЯ ${day}-${month}-${year}!<br>`)
+
+        const hours = date.getHours()
+        const minutes = date.getMinutes()
+        const seconds = date.getSeconds()
+
+        document.write(`${hours}час. ${minutes}мин. ${seconds}сек.`)
+        </script>
+    </body>
+</html>
